@@ -1,0 +1,11 @@
+name: BorderMove
+version: '${project.version}'
+main: de.luck212.bordermove.main.Main
+api-version: 1.16
+commands:
+  border:
+    description: Starte die Border
+  deletecp:
+    description: Löscht den Checkpoint des angegebenen Spielers
+  startborderplugin:
+    description: Starte das BorderMove plugin
