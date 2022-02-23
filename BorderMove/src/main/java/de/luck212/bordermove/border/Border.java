@@ -56,6 +56,7 @@ public class Border {
 
     public void resetBorder(){
         border.reset();
+        isRunning = false;
     }
 
     public boolean borderIsRunning(){

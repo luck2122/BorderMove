@@ -30,7 +30,7 @@ public class BlockPlaceListener implements Listener {
         if(event.getAction() == Action.RIGHT_CLICK_BLOCK){
             if(player.getInventory().getItemInMainHand() == null) return;
             if(player.getInventory().getItemInMainHand().getItemMeta().getLore() != null){
-                if(event.getClickedBlock().getType() != Material.MOSSY_COBBLESTONE || event.getClickedBlock().getType() != Material.COBBLESTONE){
+                if(event.getClickedBlock().getType() == Material.MOSSY_COBBLESTONE || event.getClickedBlock().getType() == Material.COBBLESTONE){
                     event.setUseItemInHand(Event.Result.DENY);
                     event.setCancelled(true);
                     return;
